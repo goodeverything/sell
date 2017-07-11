@@ -1,4 +1,15 @@
-body,html
+body, html
   line-height: 1
   font-weight: 200
-  font-family: 'PingFang SC','STHeitiSc-Light'
+  font-family: 'PingFang SC', 'STHeitiSc-Light'
+
+.clearfix
+  display: inline-block
+  &:after
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+
