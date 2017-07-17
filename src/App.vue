@@ -18,7 +18,6 @@
 
 <script type="text/ecmascript-6">
   import header from './components/header/header.vue';
-  import axios from 'axios';
   const ERR_OK = 0;
   export default {
     name: 'app',
@@ -28,7 +27,7 @@
       };
     },
     created() {
-      axios.get('http://localhost:3030/api/seller')
+      this.$http.get('/seller')
         .then(response => {
           response = response.data;
           if (response.errno === ERR_OK) {

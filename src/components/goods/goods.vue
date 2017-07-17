@@ -39,7 +39,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import axios from 'axios';
+//  import axios from 'axios';
   const ERR_OK = 0;
   export default{
     props: {
@@ -54,7 +54,8 @@
     },
     created() {
       this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee'];
-      axios.get('http://localhost:3030/api/goods')
+//      axios.get('http://localhost:3030/api/goods')
+      this.$http.get('/goods')
         .then(response => {
           response = response.data;
           if (response.errno === ERR_OK) {
