@@ -8,7 +8,7 @@ import './common/stylus/index.styl';
 
 Vue.config.productionTip = false;
 Vue.prototype.$http = axios.create({
-  baseURL: 'http://localhost:3030/api/'
+  baseURL: 'http://www.easy-mock.com/mock/596ee5e1a1d30433d837634c/sell'
 });
 
 /* eslint-disable no-new */
